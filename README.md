@@ -6,6 +6,8 @@
 
 <p align="center">🎉 <b>The weights are out:</b> <a href="https://huggingface.co/ngwgsang/vwen-r4">ngwgsang/vwen-r4</a> on Hugging Face, with <a href="https://huggingface.co/ngwgsang/vwen-r4-GGUF">GGUF builds</a> for llama.cpp. 🎉</p>
 
+<p align="center">📄 <b>The paper is out too:</b> <a href="https://arxiv.org/abs/2611.15587">arXiv:2611.15587</a></p>
+
 vwen rewrites Vietnamese sentences. Ask it to change a sentence *a little* or *a lot*, and it keeps the meaning while the wording moves. Think of it as a friend who can say *"Bạn ăn cơm chưa?"* a dozen different ways without getting bored.
 
 It's a 0.8B model ([Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B) under the hood), so it runs on a laptop, no data center required.
@@ -101,7 +103,7 @@ The final mix, before the quality grader:
 |---:|---:|---:|---:|---:|---:|---:|
 | 1,481 | 1,333 | 1,333 | 889 | 889 | 691 | 593 |
 
-Training took 71–84 minutes per run on a single T4. The full recipe is in the [model card](MODEL_CARD.md#training-procedure).
+Training took 71–84 minutes per run on a single T4. The full recipe is in the [model card](MODEL_CARD.md#training-procedure) and the [paper](https://arxiv.org/abs/2611.15587).
 
 ### Results
 
@@ -153,15 +155,18 @@ The license will be set soon. Some training sources carry non-commercial or rese
 
 ### Citation
 
-The paper is in preparation. Until then:
+If vwen helps your work, please cite the [paper](https://arxiv.org/abs/2611.15587):
 
 ```bibtex
 @misc{nguyen2026vwen,
-  title  = {VWEN: A Curated Small Language Model for Vietnamese Paraphrasing},
-  author = {Nguyen, Sang Quang},
-  year   = {2026},
-  note   = {Manuscript in preparation},
-  url    = {https://github.com/ngwgsang/vwen}
+  title         = {{VWEN}: A Curated Small Language Model for Vietnamese Paraphrasing},
+  author        = {Nguyen, Sang Quang},
+  year          = {2026},
+  eprint        = {2611.15587},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  doi           = {10.48550/arXiv.2611.15587},
+  url           = {https://arxiv.org/abs/2611.15587}
 }
 ```
 
@@ -171,4 +176,4 @@ Many thanks to **Claude-san** for drafting the seed samples, tuning the selectio
 
 ### Stay tuned
 
-Star or watch this repo to hear when the paper and data land. Until then, *hẹn gặp lại!* 👋
+The paper is out, the data and code are next. Star or watch this repo to hear when they land. Until then, *hẹn gặp lại!* 👋

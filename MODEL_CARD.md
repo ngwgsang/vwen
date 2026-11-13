@@ -17,6 +17,7 @@
 | **Training data** | 7,087 Vietnamese samples over 7 tasks, picked by a 4-stage selection pipeline |
 | **Language** | Vietnamese |
 | **Developer** | Sang Quang Nguyen |
+| **Paper** | [arXiv:2611.15587](https://arxiv.org/abs/2611.15587) |
 | **License** | To be decided at release (see [License](#license)) |
 
 VWEN is a small model that rewrites Vietnamese sentences. You can ask for a **light** or a **strong** paraphrase. It also handles four other rewriting tasks and can judge whether two sentences mean the same thing. It is small enough to run on a laptop CPU.
@@ -231,14 +232,17 @@ The license will be set at release. Some training sources carry non-commercial o
 
 ## Citation
 
-The paper is in preparation. Until then:
+If you use VWEN, please cite the [paper](https://arxiv.org/abs/2611.15587):
 
 ```bibtex
 @misc{nguyen2026vwen,
-  title  = {VWEN: A Curated Small Language Model for Vietnamese Paraphrasing},
-  author = {Nguyen, Sang Quang},
-  year   = {2026},
-  note   = {Manuscript in preparation},
-  url    = {https://github.com/ngwgsang/vwen}
+  title         = {{VWEN}: A Curated Small Language Model for Vietnamese Paraphrasing},
+  author        = {Nguyen, Sang Quang},
+  year          = {2026},
+  eprint        = {2611.15587},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  doi           = {10.48550/arXiv.2611.15587},
+  url           = {https://arxiv.org/abs/2611.15587}
 }
 ```
